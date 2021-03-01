@@ -1,4 +1,4 @@
-baseURL = "http://blog.bouni.de/"
+baseURL = "https://blog.bouni.de/"
 languageCode = "en-us"
 title = "Bouni's blog"
 theme = "salix"
