@@ -4,7 +4,6 @@ title: Create custom icon font from SVGs for use in Home-Assistant
 date: 2019-09-20
 comments: true
 tags: [ Home Assistant, Icons, SVG, Font ]
-tags: [ Home Assistant, Icons, SVG, Font ]
 ---
 
 I always wanted to have some custom icons for my [Home-Assistant](https://www.home-assistant.io/) setup.

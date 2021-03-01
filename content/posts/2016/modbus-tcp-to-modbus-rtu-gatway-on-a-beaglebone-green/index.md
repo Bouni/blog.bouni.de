@@ -4,7 +4,6 @@ title: Modbus TCP to Modbus RTU gateway on a BeagleBone Green
 date: 2016-12-10 20:22:30 +0100
 comments: true
 tags: [ Modbus, Gateway, TCP, RTU, BeaglBone, ]
-tags: [ Modbus, Gateway, TCP, RTU, BeaglBone, ]
 ---
 
 In my last [post](/2016/rs485-on-a-beaglebonegreen-waveshare-cape.html) I've explained how I got RS485 working on a BeagleBone Green.

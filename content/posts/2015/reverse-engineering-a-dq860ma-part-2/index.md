@@ -4,7 +4,6 @@ title: Reverse engineering a DQ860MA part 2
 date: 2015-03-07 16:34:42 +0100
 comments: true
 tags: [ stepper driver, DQ860MA, reverse engeneering]
-tags: [ stepper driver, DQ860MA, reverse engeneering]
 ---
 
 And here we go with part 2 of my DQ860MA reverse engineering project!

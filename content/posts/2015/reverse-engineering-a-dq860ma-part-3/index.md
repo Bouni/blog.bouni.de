@@ -4,7 +4,6 @@ title: Reverse engineering a DQ860MA part 3
 date: 2015-03-09 14:53:36 +0100
 comments: true
 tags: [ stepper driver, DQ860MA, reverse engeneering]
-tags: [ stepper driver, DQ860MA, reverse engeneering]
 ---
 
 I started playing around with the images i've scanned and with a little GIMP magic i was able to create a useful overlay image.

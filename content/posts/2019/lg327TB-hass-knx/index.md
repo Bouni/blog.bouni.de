@@ -4,7 +4,6 @@ title: Integrate Alpha Innotec LG 327 TB ventilation unit in Home-Assistant
 date: 2019-09-26
 comments: true
 tags: [ Home Assistant, Modbus, KNX]
-tags: [ Home Assistant, Modbus, KNX]
 ---
 
 A while ago I built a Modbus RTU to Modbus TCP Gateway based on a Beaglebone Green and a RS485 Cape (check my blog posts [[1](http://blog.bouni.de/2016/modbus-tcp-to-modbus-rtu-gateway-on-a-beaglebone-green.html)] from back then).

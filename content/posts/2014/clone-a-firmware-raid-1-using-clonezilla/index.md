@@ -2,8 +2,6 @@
 layout: post
 title: Clone a Firmware RAID 1 using Clonezilla
 date: 2014-11-20 13:26:32 +0100
-comments: true
-tags: [ clonezilla, RAID1, Intel-Matrix, Firmware-RAID, Intel-RST, FakeRaid]
 tags: [ clonezilla, RAID1, Intel-Matrix, Firmware-RAID, Intel-RST, FakeRaid]
 ---
 

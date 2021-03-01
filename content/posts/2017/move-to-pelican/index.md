@@ -4,7 +4,6 @@ title: Switch from octopress to pelican
 date: 2017-08-28
 comments: true
 tags: [ blog, Octopress, Pelican]
-tags: [ blog, Octopress, Pelican]
 ---
 
 After a long period of silence I finally found the time to migrate my blog from [Octopress](http://octopress.org/) to [Pelican](https://blog.getpelican.com/).

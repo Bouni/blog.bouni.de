@@ -2,8 +2,6 @@
 layout: post
 title: Taking a DQ860MA stepper driver apart
 date: 2015-02-03 09:05:39 +0100
-comments: true
-tags: [ stepper driver, DQ860MA, teardown, reverse engeneering]
 tags: [ stepper driver, DQ860MA, teardown, reverse engeneering]
 ---
 

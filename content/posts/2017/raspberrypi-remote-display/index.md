@@ -2,8 +2,6 @@
 layout: post
 title: Make RaspberryPi + Samsung TV a remote display 
 date: 2017-12-17
-comments: true
-tags: [ RaspberryPi, CEC, Framebuffer, Screen Resolution, VNC]
 tags: [ RaspberryPi, CEC, Framebuffer, Screen Resolution, VNC]
 ---
 

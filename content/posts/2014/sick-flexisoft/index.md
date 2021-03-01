@@ -2,8 +2,6 @@
 layout: post
 title: SICK FlexiSoft, Modbus/TCP and python
 date: 2014-11-09 11:54:07 +0100
-comments: true
-tags: [ SICK, FlexiSoft, Python, Modbus ]
 tags: [ SICK, FlexiSoft, Python, Modbus ]
 ---
 

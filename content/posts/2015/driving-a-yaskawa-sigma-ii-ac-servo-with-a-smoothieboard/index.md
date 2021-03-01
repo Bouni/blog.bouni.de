@@ -4,7 +4,6 @@ title: Driving a Yaskawa SIGMA II AC-Servo with a Smoothieboard
 date: 2015-02-02 19:51:14 +0100
 comments: true
 tags: [ Yaskawa, SIGMA2, AC-Servo, Servo, Smoothieboard]
-tags: [ Yaskawa, SIGMA2, AC-Servo, Servo, Smoothieboard]
 ---
 
 I posted a video on Youtube showing how I connected a [Smoothieboard](http://smoothieware.org/) wired to a [Yaskawa Sigma 2](https://www.yaskawa.com/pycprd/products/sigma5-servo-products/servopacks/sgdh) AC-Servodriver with a 400W Servomotor.
