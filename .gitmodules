@@ -1,0 +1,3 @@
+[submodule "themes/salix"]
+	path = themes/salix
+	url = https://github.com/Bouni/hugo-theme-salix

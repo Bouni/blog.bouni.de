@@ -1,0 +1,9 @@
+baseURL = "http://blog.bouni.de/"
+languageCode = "en-us"
+title = "Bouni's blog"
+theme = "salix"
+enableEmoji = true
+
+[params]
+  Author = "Bouni"
+  GitHub = "bouni"
