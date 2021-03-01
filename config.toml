@@ -13,3 +13,4 @@ enableEmoji = true
   Author = "Bouni"
   bio = "random bits and pieces"
   enableRSS = true
+  avatarLink = "/"
