@@ -4,6 +4,12 @@ title = "Bouni's blog"
 theme = "salix"
 enableEmoji = true
 
+[social]
+  github = "https://github.com/bouni/"
+  twitter = "https://twitter.com/bouni2016"
+
+
 [params]
   Author = "Bouni"
-  GitHub = "bouni"
+  bio = "random bits and pieces"
+  enableRSS = true
