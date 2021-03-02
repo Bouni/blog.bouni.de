@@ -152,7 +152,7 @@ I tried some CRC brute force attempts but without success. After having
 discussed that issue with my Italian friend he was able to figure out 
 the polynom `0x07` as well as the initial value `0xF3` for the CRC algorithm.
 
-I used the CRC calculator at <a href="http://blog.bouni.de/2018/sunshine2k.de">http://www.sunshine2k.de/coding/javascript/crc/crc_js.html</a>
+I used the CRC calculator from <a href="http://www.sunshine2k.de/coding/javascript/crc/crc_js.html">sunhine2k.de</a>
  to verify the poly and init values. 
 Fortunately the page gives you a nice lookup table for the CRC values 
 which I then used in my Python program to verify all the messages I've 
