@@ -15,14 +15,14 @@ That tappet pushes a brass screw upwards. I thought that this will work fine, bu
 
 ## The solution
 
-!["My new eccentric tappet"](eccenter.jpg)
+{{< thumbnail src="eccenter.jpg" caption="My new eccentric tappet" >}}
 
 That's my new eccentric tappet. It is a turned piece of metal rod, that has the eccentric hole (not yet done :-) ) and a ball bearing on it.
 That will hopefully reduce the friction and solve my problem.
 
 When i developed the new eccenter i searched for a formula to calculate the distance the eccenter will lift the drill upwards.
 
-!["eccentric path"](eccentric-path.svg)
+![eccentric path](eccentric-path.svg)
 
 * red cross: marks the center of the circle before and after a half turn.
 * blue cross: the center of the rotation
@@ -35,4 +35,4 @@ The formula is: ``distance [d] = offset [o] x 2``
 
 I've installed and tested the new eccentric tappet and it seems to work better as the old one. But I have to drill a complete PCB without problems to confirm that.
 
-!["The new eccentric tappet"](ball-bearing-eccentric-tappet.jpg)
+{{< thumbnail src="ball-bearing-eccentric-tappet.jpg" caption="The new eccentric tappet" >}}

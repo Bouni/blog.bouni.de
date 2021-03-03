@@ -17,7 +17,7 @@ I searched the internet for information about the bus, but little to nothing can
 
 # Hardware
 Top side of the circuit board:
-![UAP1 top side](UAP1-1.jpg)
+{{< thumbnail src="UAP1-1.jpg" caption="UAP1 top side" >}}
 
  1. The micro controller, a 20-pin SSOP, labled with F9222. After a while I found out  that it must be a Renesas μPD78F9222 8-bit micro controller ([datasheet](U16898EJ6V0UD00.pdf)).
  2. A Darlington Transistor Array, a 16-pin SOT, labled with ULN2003A. Drives at least the three relais, maybe more.
@@ -25,11 +25,11 @@ Top side of the circuit board:
  4. A RS485 transceiver, a 8-pin SOT, labled with SP485EE. 
 
 Bottom side of the circuit board:
-![UAP1 bottom side](UAP1-2.jpg)
+{{< thumbnail src="UAP1-2.jpg" caption="UAP1 bottom side" >}}
 
 Not much to see here, just that all pins of the 6-pin RJ12 sockets are directly conected to each other.
 
-![UAP1 connectors](UAP1-3.jpg)
+{{< thumbnail src="UAP1-3.jpg" caption="UAP1 connectors" >}}
 
 Pinout:
 
@@ -48,7 +48,7 @@ I use a ExSys USB to RS422/RS485 converter I had lying around which a connected 
 I expected a rather simple protocoll where no comunication happens until the UAP1 gets triggered by a switch, but I was more than wrong.
 Here's what I got using the USB converter with the door closed idling:
 
-![output of /dev/ttyUSB0](RS485-1.png)
+{{< thumbnail src="RS485-1.png" caption="output of /dev/ttyUSB0" >}}
 
 At first I thought I had a wrong baudrate but after a while I saw that at powerup the UAP1 sends the string "EE000478-00" before the gibberish starts.
 That occured at **19200** baud (8N1) so I think that must be the correct baudrate.
@@ -64,19 +64,19 @@ I also soldered a pin header to the 5 solderpads next to the μPD78F9222. I hope
 connected. To supply the board with 24VDC, which normally comes in via the RJ12 connector, I simply used the terminals taht normally connect the switches.
 
 My setup:
-![My setup](setup.jpg)
-![My setup in detail from the top](signals-1.jpg)
+{{< thumbnail src="setup.jpg" caption="My setup" >}}
+{{< thumbnail src="signals-1.jpg" caption="My setup in detail from the top" >}}
 
 
 - White: TX
 - Brown: TX enable
 - Green: RX
 
-![My setup in detail from the bottom](signals-2.jpg)
+{{< thumbnail src="signals-2.jpg" caption="My setup in detail from the bottom" >}}
 
 When the board is powered while the logic analyzer is collecting data, we see these bytes comming in:
 
-![Startup sample](logic-1.png)
+{{< thumbnail src="logic-1.png" caption="Startup sample" >}}
 
 Thats `0x00 0x0B` followed by the ASCII "EE000478-00" and terminated by `0x71`.
 At that point I realized that "EE000478-00" is printed to the PCB, so its kind of a model or serial number.
@@ -97,12 +97,12 @@ Later I captured traces using my logic analyzer for each possible command, these
 
 
 This is what I got:
-![First trace](logic-2.png)
+{{< thumbnail src="logic-2.png" caption="First trace" >}}
 
 I've set two analyzers for async serial data on both, the RX and the 
 TX line. They make me able to export the analyzed data as CSV.
 
-![Vimdiff exports](vimdiff-1.png)
+{{< thumbnail src="vimdiff-1.png" caption="Vimdiff exports" >}}
 
 The RX line still contains the sent bytes of the UAP1, so I wrote a 
 python Script that annotates the RX file with RX and TX labels.

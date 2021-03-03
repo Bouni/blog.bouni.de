@@ -11,7 +11,7 @@ Unfortunately the [documentation](http://www.waveshare.com/wiki/RS485_CAN_CAPE#R
 
 <!--more-->
 
-!["BBG + Waveshare cape"](BeagleBoneRS485-1.jpg)
+{{< thumbnail src="BeagleBoneRS485-1.jpg" caption="BBG + Waveshare cape" >}}
 
 ## The hardware part
 
