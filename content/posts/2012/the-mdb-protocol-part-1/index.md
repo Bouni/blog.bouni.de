@@ -11,7 +11,7 @@ we noted that we need another way to pay the drinks.
 So i decided to build a not yet defined type of cashless payment device. After a little research we found out that the 
 machine controller communicates with the coin changer over the [MDB protocol](http://www.vending.org/technology/MDB_Version_4-2.pdf). 
 
-<!-- more -->
+<!--more-->
 
 ## The basics
 

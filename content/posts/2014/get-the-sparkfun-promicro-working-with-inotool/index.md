@@ -7,7 +7,7 @@ tags: [ Arduino, ino, shell, vim]
 
 I've recently bought a few [SparkFun ProMicro 5V 16Mhz](https://www.sparkfun.com/products/12640) clones from Ebay because they are extremely cheap (7 Euro each) and habe native USB.
 The only problem i had is that i was not able to program them using [inotool](http://inotool.org/). 
-<!-- more -->
+<!--more-->
 
 ## The upload issue
 

@@ -15,7 +15,7 @@ and controller PCB for the diode.
 
 !['The laser unit'](laser_printer_1.JPG)
 
-<!-- more -->
+<!--more-->
 
 This is the areas the beam would normally cover. Its not very exact, more an assumption but to me it looks right.
 The beam starts at the laser diode [A] on the left, goes through a lens [B] (i don't understand the function of this lens at the moment), 

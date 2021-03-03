@@ -8,7 +8,7 @@ tags: [ stepper driver, DQ860MA, reverse engeneering]
 
 And here we go with part 2 of my DQ860MA reverse engineering project!
 
-<!-- more -->
+<!--more-->
 
 After i listed all parts, i desoldered them and cleaned the PCB very well.
 Then i scanned the PCB from both sides to get a clear image of all the traces.

@@ -8,7 +8,7 @@ tags: [ jinja2, flask, programming, python ]
 
 I do a few webprojects with [Flask](http://flask.pocoo.org) and I love it!
 While creating a template i searched for a way to call functions from within the template, and found out that i can use a `@app.context_processor` decorator.
-<!-- more -->
+<!--more-->
 
 ```python
 @app.context_processor

@@ -13,7 +13,7 @@ Anyway, with a lot of googling and trail and error i finally got a semi automati
 
 You have to modify 3 files for booting EFI machines as well as BIOS based ones.
 
-<!-- more -->
+<!--more-->
 
 ## EFI: /EFI/boot/grub.cfg
 

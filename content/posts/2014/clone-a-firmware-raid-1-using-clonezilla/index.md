@@ -17,7 +17,7 @@ The biggest problem with Clonezilla is that it does not support creating images 
 
 My computers both have 2 SSD disks with 120GB each configured as RAID1. The RAID controller is the one provided by the Intel X79 chipset of the ASUS P9X79 Pro Mainboards, which is a Firmware RAID.
 
-<!-- more -->
+<!--more-->
 
 But never give up! So I booted from my Clonezilla USB Drive, followed all the instructions for creating a image and finally arrived at the point where I had to choose which disk I want to save.
 I saw 2 entries, `sda`  and `sdb` which told me that clonezilla didn't recognizeed the disks as a single RAID disk.

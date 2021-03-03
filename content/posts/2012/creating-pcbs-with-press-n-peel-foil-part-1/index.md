@@ -8,7 +8,7 @@ tags: [ PCB, electronics, making]
 Yesterday i got my ordered press-n-peel foils! The reason why i want to try [press-n-peel](http://www.techniks.com/) foil is that i want to do my PCBs in our hackerspace with as less steps and costs as possible.
 I've tried the [toner transfer method](http://www.dr-lex.be/hardware/tonertransfer.html) a few times but with lousy results. The toner seems to grip to the copper as well as to the paper, no matter what sort of paper i've tried. 
 [Reichelt](http://reichelt.de) catalog pages, waxed paper, baking paper, etc. 
-<!-- more -->
+<!--more-->
 The effort to rub the paper of while have the whole thing in sudsy water sucks as much as develop 
 the PCBs photo resist in another chemical step. I know that there are a lot of people that have awsome results with the toner transfer method, but to me its to sophisticated. 
 

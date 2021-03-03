@@ -14,7 +14,7 @@ That means no `input type="file"` form field where i have to select each file an
 I came across [this nice tutorial](http://tutorialzine.com/2011/09/html5-file-upload-jquery-php) for a HTML5/jquery file uploader, but the backend is written in PHP.
 So I decided to try to get this working with Flask and it was easier as I supposed :-)
 
-<!-- more -->
+<!--more-->
 
 ## The server side
 

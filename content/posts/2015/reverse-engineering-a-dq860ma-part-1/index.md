@@ -11,7 +11,7 @@ Unfortunately i realized that the PCB is a 4 layer PCB, which makes it way harde
 
 So as a start i will get a list of all components.
 
-<!-- more -->
+<!--more-->
 
 | part  | name          | type                          | footprint     | value         |
 | --- | --- | --- | --- | --- |

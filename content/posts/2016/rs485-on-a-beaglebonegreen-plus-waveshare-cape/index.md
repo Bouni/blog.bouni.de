@@ -9,7 +9,7 @@ tags: [ electronics, BeagleBone, Waveshare, RS485]
 I want to build a Modbus TCP to Modbus RTU gateway using a [BeagleBoneGreen](http://beagleboard.org/Green) and a [WaveShare RS485 CAN CAPE](http://www.waveshare.com/rs485-can-cape.htm).
 Unfortunately the [documentation](http://www.waveshare.com/wiki/RS485_CAN_CAPE#RS485_CAN_CAPE) on the Waveshare Cape is really bad, so I will try to document here what steps were necessary to get the things up and running!
 
-<!-- more -->
+<!--more-->
 
 !["BBG + Waveshare cape"](BeagleBoneRS485-1.jpg)
 

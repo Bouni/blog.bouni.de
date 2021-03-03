@@ -8,7 +8,7 @@ tags: [ stepper driver, DQ860MA, reverse engeneering]
 
 I started playing around with the images i've scanned and with a little GIMP magic i was able to create a useful overlay image.
 
-<!-- more -->
+<!--more-->
 
 As you can see, the quality is not perfect, but still good enough to be very helpful in the reverse engineering process.
 

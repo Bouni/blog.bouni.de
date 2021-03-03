@@ -10,7 +10,7 @@ The seller sent me a new one winthin 2 days which is awesome, but the best part 
 
 So i decided that there are pepole out there who for sure are interested in a teardown :-)
 
-<!-- more -->
+<!--more-->
 
 This is the view when taking the plasic cover off. Its basically what i expected to see, the control part on the top layer,
 the FET's on the bottom where the the heat sink is. As you can see the PCB is labled with V2.2 which seems to be the most recent version.

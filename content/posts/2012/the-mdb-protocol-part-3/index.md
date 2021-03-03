@@ -9,7 +9,7 @@ Last Tuesday I’ve nearly finished the complete code for the MateDealer project
 (that is the drink the [MateDealer](https://reaktor23.org/de/projects/mate_dealer) got it’s name from) I loged the MDB communication with my logic analyzer. 
 I have taken a few screenshots of the logic trace and now i will try to explain the complete procedure.
 
-<!-- more -->
+<!--more-->
 
 ## Checksum
 

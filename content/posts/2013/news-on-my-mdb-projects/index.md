@@ -8,7 +8,7 @@ tags: [ mdb, vending-machine]
 
 Because i've got a lot of emails during the last year with several questions about my MDB projects, i try to answer them here.
 
-<!-- more -->
+<!--more-->
 
 ## The MateDealer, what is it exactly?
 

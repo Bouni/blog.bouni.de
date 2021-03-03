@@ -8,7 +8,7 @@ categories: mdb, vending, Arduino, 9-bit, serial
 
 My MateDealer project was entirely written in C because the Arduino IDE or more detailed the HardwareSerial part lacks the 9-bit support. It is easy to send a 8 bit data frame, but nearly impossible to do that with 9 bit frames. I worked for a while on implementing 9-bit support for the Arduino IDE and recently i finished my work!
 
-<!-- more -->
+<!--more-->
 
 I've implemented 9-bit support for Arduino IDE 1.0.5 (unfortunately the 1.0.6 version came out just days later :-/ ) as well as 1.5.7. The later includes support for AVR based boards such as the Mega2560 as well as for ARM based boards like the Due.
 

@@ -12,7 +12,7 @@ This is the printed press-n-peel foil:
 
 !['Press n peel foil printed layout'](pressnpeel_2.JPG)
 
-<!-- more -->
+<!--more-->
 
 The foil pressed on the PCB:
 
