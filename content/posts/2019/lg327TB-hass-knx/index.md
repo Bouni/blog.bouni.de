@@ -6,7 +6,7 @@ comments: true
 tags: [ Home Assistant, Modbus, KNX]
 ---
 
-A while ago I built a Modbus RTU to Modbus TCP Gateway based on a Beaglebone Green and a RS485 Cape (check my blog posts [[1](http://blog.bouni.de/posts/2016/modbus-tcp-to-modbus-rtu-gatway-on-a-beaglebone-green/)] from back then).
+A while ago I built a Modbus RTU to Modbus TCP Gateway based on a Beaglebone Green and a RS485 Cape (check my [blog post](http://blog.bouni.de/posts/2016/modbus-tcp-to-modbus-rtu-gatway-on-a-beaglebone-green/) from back then).
 It worked, but stoped working from time to time and I decided to fix that issue a few weeks ago. I updated the OS on the Beaglebone and realized that so many things changed since my initial implementation that I didn't want to invest to much time.
 
 So I decided to use a USB to RS485 converter and plug that directly into my server and control the ventilation unit directly from Home-Assistant.
