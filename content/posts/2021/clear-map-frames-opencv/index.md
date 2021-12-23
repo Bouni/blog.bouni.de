@@ -68,7 +68,7 @@ template[template != 255] = 0
 w, h = template.shape[::-1]
 ```
 
-### Iterate ov all original images and get the date from the filename
+### Iterate over all original images and get the date from the filename
 ```python
 # iterate over all the original images
 for image in os.listdir(os.path.join(BASEPATH, "original")):
