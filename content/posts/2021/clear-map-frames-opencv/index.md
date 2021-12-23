@@ -1,6 +1,7 @@
 ---
 title: "Cleanup map frames with OpenCV"
 date: 2021-12-23T12:53:00+01:00
+tags: [OpenCV, python, template matching, covid]
 ---
 
 We're in a pandemic for approximately 2 years by now and sinc the beginning my couny administration is publishing a map that shows the Covid-19 cases per municipality on a regular basis.
