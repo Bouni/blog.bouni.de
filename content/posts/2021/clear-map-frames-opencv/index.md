@@ -202,4 +202,5 @@ for image in os.listdir(os.path.join(BASEPATH, "original")):
 There are still a few frames that are blury but thats because they published images with a low resolution on some days.
 The result is not a 100% perfect but I'm pretty statisfied with it over all :smile:
 
-I'll publish the final video on Youtube and Vimeo soon.
+{{< youtube BfRKCLot6nw >}}
+
