@@ -1,6 +1,7 @@
 ---
 title: "Caddy - Hetzner DNS challenge"
 date: 2022-09-21
+tags: [caddy, reverse proxy, LetsEncrypt, SSL, TLS challenge, Hetzner]
 ---
 
 It took me quite a while to figure out how to get Let's encrypt SSL certificates for my subdomains that are not accessible from the internet. I struggled to find the right resources so I thought it might be a good idea to document my findings here :smile:
@@ -68,7 +69,7 @@ The caddyfile defines that it should use the DNS challenge with the Hetzner plug
 ```Caddyfile
 {
 	admin off
-    log 
+    log
 }
 
 internal.bouni.de {
@@ -77,13 +78,10 @@ internal.bouni.de {
     	dns hetzner {env.HETZNER_API_KEY}
     }
 }
-``` 
+```
 
 The subdomain `internal.bouni.de` is not record in Hetzners DNS server, only in my local DNS records (I use [pihole](https://pi-hole.net/) for that).
 Normally that would result in caddy not being able to get a cert for that subdomain.
 
 But using the DNS challenge, caddy uses the Hetzner API to create a TXT record that holds a "certain value" (The actual words from the docs :smirk:) which allows Lets encrypt to verify that I'm in control of this domain.
 It then issues a cert which is used by caddy.
-
-
-

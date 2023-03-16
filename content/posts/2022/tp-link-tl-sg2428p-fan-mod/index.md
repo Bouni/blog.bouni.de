@@ -1,6 +1,7 @@
 ---
 title: "Upgrading my home network"
 date: 2022-09-06T07:55:07+02:00
+tags: [WiFi, Mikrotik, TP-Link, Omada, network]
 ---
 
 I'm in the process of upgrading my home wireless setup and here I document the proccess, maybe it helps some of you.
@@ -22,7 +23,7 @@ The most convincing feature for me at the time was Mikrotiks CAPsMAN, a wireless
 
 ### Wireless APs
 
-For the Accesspoints I went for the Mikrotik hAPs. 
+For the Accesspoints I went for the Mikrotik hAPs.
 
 ![Mikrotik wAP](wAP.png)
 
@@ -32,7 +33,7 @@ As I only had these two PoE devices I went for the Passive PoE Injectors that ca
 
 ### Switch
 
-As my main switch I use a Mikrotik CRS125-24G-1S-RM "Cloud Router Switch". 
+As my main switch I use a Mikrotik CRS125-24G-1S-RM "Cloud Router Switch".
 
 ![Mikrotik CRS125-24G-1S-RM](CRS125-24G-1S-RM.png)
 
@@ -47,7 +48,7 @@ Thats most likely due to my lack of networking knowledge and not the fault of th
 
 ## Future setup
 
-### Router 
+### Router
 
 For now I'll stick with the Mikrotik hAP AC Lite and simply disable the Wifi.
 I'm happy with it as a router, so why change it?
@@ -88,8 +89,3 @@ I decided to go for the Omada Software Controller instead of the Omada Hardware 
 
 Overall the new setup performs very good. I had to return one of the EAP650s though because it wouldn't power up via PoE and the replacement is still not shipped.
 But at the moment all devices work fine with two APs as far as I can tell.
-
-
-
-
-
