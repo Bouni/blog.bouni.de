@@ -2,7 +2,6 @@
 title: "Getting LinuxCNC with ethercat running on a Beckhoff CX2040"
 date: 2023-04-17
 tags: [LinuxCNC, linux, cnc, ethercat, beckhoff, cx2040, ccat]
-draft: true
 ---
 
 I got an old Beckhoff CX2040 that was no longer need into my hands and decided to try if I'll get LinuxCNC with EtherCat support running on there.
@@ -300,3 +299,93 @@ So the EtherCAT bus seems to work as expected.
 No we want to integrate all of that into LinuxCNC.
 
 ## LinuxCNC with EtherCAT
+
+```
+cd ~
+git clone https://github.com/linuxcnc-ethercat/linuxcnc-ethercat.git
+cd linuxcnc-ethercat
+make configure
+```
+
+building with `make` lead to an error that `ecrt.h` could not be found, so I symlinked that
+
+```
+sudo ln -s /opt/etherlab/include/ecrt.h /usr/include/linuxcnc/ecrt.h
+```
+
+After that the linker wasn't able to find `libethercat.so` so again, I symlinked that as well
+
+```
+sudo ln -s /opt/etherlab/lib/libethercat.so /usr/lib/libethercat.so
+```
+
+With these little hacks in place I was able to build and install
+
+```
+make
+make install
+```
+
+## CIA-402 HAL compnent
+
+In order to use servodrives I added the CIA-402 HAL compnent by `dbraun`
+
+```
+cd ~
+git clone https://github.com/dbraun1981/hal-cia402
+cd hal-cia402
+sudo halcompile --install cia402.comp
+```
+
+## LinuxCNC EtherCAT setup
+
+As a quick test I started LinuxCNC, selected sim → axis → axis and let it save the files.
+
+Then I created a `ethercat.hal` file in `~/linuxcnc/configs/sim.axis/`
+
+```
+loadusr -W lcec_conf ethercat-conf.xml
+loadrt lcec
+addf lcec.read-all servo-thread
+addf lcec.write-all servo-thread
+```
+
+After that I created a `ethercat-conf.xml` in the same directory
+
+```
+<masters>
+<master idx="0" appTimePeriod="1000000" refClockSyncCycles="5">
+      <slave idx="0" type="EL3255" />
+</master>
+</masters>
+```
+
+As a last step I edited the `~/linuxcnc/configs/sim.axis/axis.ini` file
+
+```
+...
+# Hardware Abstraction Layer section --------------------------------------------------
+[HAL]
+
+# The run script first uses halcmd to execute any HALFILE
+# files, and then to execute any individual HALCMD commands.
+#
+
+# list of hal config files to run through halcmd
+# files are executed in the order in which they appear
+HALFILE = core_sim.hal
+HALFILE = sim_spindle_encoder.hal
+HALFILE = axis_manualtoolchange.hal
+HALFILE = simulated_home.hal
+HALFILE = check_xyz_constraints.hal
+HALFILE = ethercat.hal
+...
+```
+
+in there I just added the line `HALFILE = ethercat.hal`
+
+After starting LinuxCNC using the desktop icon I went to `Machine → HAL Configuration` where I went to `Pins → lcec → 0 → 0`
+
+Here I was presented with a list of `pot-...` pins that belonged to the EL3255 I/O terminal :partying_face:
+
+Everything seems to work so far. I'll continue this in another blog post soon
