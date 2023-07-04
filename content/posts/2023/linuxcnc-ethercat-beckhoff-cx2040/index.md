@@ -4,21 +4,22 @@ date: 2023-04-17
 tags: [LinuxCNC, linux, cnc, ethercat, beckhoff, cx2040, ccat]
 ---
 
-I got an old Beckhoff CX2040 that was no longer need into my hands and decided to try if I'll get LinuxCNC with EtherCat support running on there.
+I got an old Beckhoff CX2040 that was no longer in use into my hands and decided to try if I can get LinuxCNC with EtherCat support running on it.
 
 My setup consists of the [CX2040](https://www.beckhoff.com/en-en/products/ipc/embedded-pcs/cx20x0-intel-celeron-core-i7/cx2040.html) itself
-and a [CX2100-0004](https://www.beckhoff.com/en-en/products/ipc/embedded-pcs/cx20x0-intel-celeron-core-i7/cx2100-0004.html) 45W power supply that alos features the E-Bus connector for additional I/O terminals.
+and a [CX2100-0004](https://www.beckhoff.com/en-en/products/ipc/embedded-pcs/cx20x0-intel-celeron-core-i7/cx2100-0004.html) 45W power supply that also features the E-Bus connector for additional I/O terminals.
+I had an EL3255 5 port pontentiometer terminal and a EK1110 bus connector laying around and used those for a first test.
 
-![CX2040 and CX2100-0004](cx2040.png)
+![CX2040 + CX2100-0004 + EL3255 + EK1110](cx2040.png)
 
-The feature I'm most interested in is the so called CCAT FPPGA inside the CX2040 that allows to interface with the vast variety of Beckhoff I/O terminals and other EtherCat devices without the need of an dedicated Ethernet port.
+The feature I'm most interested in is the so called CCAT FPPGA inside the CX2040 that allows to interface with the vast variety of Beckhoff I/O terminals and other EtherCat devices without the need of an dedicated Ethernet port and a bus coupler.
 
-As I wasn't able to find any guid on how to get this up and running I decided to write it down into this blog post so that others can benefit from it and I have a place that helps me compensate for my memory gaps in the future :smirk:
+As I wasn't able to find any guide on how to get this up and running I decided to write it down into this blog post so that others can benefit from it and I have a place that helps me compensate for my memory gaps in the future :smirk:
 
 ## LinuxCNC ISO
 
 I downloaded the latest LinuxCNC ISO from their [website](http://linuxcnc.org/downloads/) which was **LinuxCNC 2.8.4 Debian 10 Buster PREEMPT-RT ISO** at the time of writing this.
-Using Balea Etcher I wrote the ISO onto a USB stick and plugged it into the CX2040. After powering the device, hitting F7 repeatedly gets you into the boot selection menu.
+Using Balea Etcher I wrote the ISO onto a USB drive and plugged it into the CX2040. After powering the device, hitting `F7` repeatedly gave me the boot selection menu.
 I chose graphical install and installed the system on the CFast card, nothing special here.
 
 After completing the installation I upgraded the system as a first step.
