@@ -15,3 +15,5 @@ publishDir = "/opt/docker/www/blog.bouni.de/"
   bio = "random bits and pieces"
   enableRSS = true
   avatarLink = "/"
+  remark42SiteID = "blog"
+  remark42Url = "https://comments.bouni.de"
