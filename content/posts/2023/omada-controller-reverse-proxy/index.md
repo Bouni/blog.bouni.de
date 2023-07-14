@@ -40,6 +40,7 @@ First the relevant part of my `docker-compose.yml`
       - PGID=508
       - PUID=508
     ports:
+      - 8043:8043
       - 29810:29810/udp
       - 29811:29811
       - 29812:29812
