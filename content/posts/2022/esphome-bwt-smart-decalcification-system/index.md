@@ -44,7 +44,7 @@ The wiring is pretty straight forward
 
  I initially ran a self written REST implementation but decided to go for [ESPhome](esphome.io/) because it integrates nicely with [Home-Assistant](home-assistant.io/) and handles the Wifi stuff like captive portal, reconnect etc. perfectly.
 
- {{<github repo="bouni/esphome-bwt-sensor" file="bwt.yaml" lang="yaml" >}}
+ {{<github repo="bouni/esphome-bwt-sensor" file="bwt.yaml" lang="yaml" linenos=true style="onedark">}}
 
  ## Result
 

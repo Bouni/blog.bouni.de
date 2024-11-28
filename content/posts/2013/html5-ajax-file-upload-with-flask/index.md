@@ -3,7 +3,6 @@ layout: post
 title: HTML5 ajax file upload with flask
 date: 2013-06-26 15:17:00
 comments: true
-published: true
 tags: [ jinja2, flask, programming, python ]
 ---
 

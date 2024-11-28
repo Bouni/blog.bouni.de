@@ -19,11 +19,11 @@ First of all, RS485 is slightly different from lets say RS232 because it is Half
 The physical connection between two bus devices is made by two differential wires. In order to be able to either receive or send, you need to tell the RS485 driver to switch between these modes (some drivers have auto sensing, but the one used on the Waveshare cape don't have this feature).
 
 And here begins the trouble. The and [documentation](http://www.waveshare.com/wiki/RS485_CAN_CAPE#RS485_CAN_CAPE) and the [diagram](http://www.waveshare.com/rs485-can-cape.htm) on the product page only mention a so called "RS485 transceiver enable jumper" that gives you the choice between either receive or send mode.
-Nowhere is documented that an GPIO pin is wired to the <span style="text-decoration: overline">RE</span>/DE pins of the driver IC, except on this [schematic](http://copperhilltech.com/content/RS485_CAN_Schematic.pdf) I've found after a long search.
+Nowhere is documented that an GPIO pin is wired to the {{< overline RE >}}/DE pins of the driver IC, except on this [schematic](http://copperhilltech.com/content/RS485_CAN_Schematic.pdf) I've found after a long search.
 
 In the first place I wired a GPIO Pin to the RSE header using a jumper wire and after that worked I soldered a wire in, just to see at a second closer look in the schematic that there is already a not documented connection in place! (ironically the same GPIO pin I connected :-) )
 
-In the [schematic](http://copperhilltech.com/content/RS485_CAN_Schematic.pdf) you can see that header P9 Pin 42 is connected via an 0R resistor to the RSE signal. The RSE signal is connected to <span style="text-decoration: overline">RE</span> and DE. According to this [document](http://elinux.org/images/3/33/GPIO_Programming_on_the_Beaglebone.pdf) P9 pin 42 is `GPIO7`.
+In the [schematic](http://copperhilltech.com/content/RS485_CAN_Schematic.pdf) you can see that header P9 Pin 42 is connected via an 0R resistor to the RSE signal. The RSE signal is connected to {{< overline RE >}} and DE. According to this [document](http://elinux.org/images/3/33/GPIO_Programming_on_the_Beaglebone.pdf) P9 pin 42 is `GPIO7`.
 
 ## The software part
 

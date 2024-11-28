@@ -107,9 +107,10 @@ TX line. They make me able to export the analyzed data as CSV.
 The RX line still contains the sent bytes of the UAP1, so I wrote a 
 python Script that annotates the RX file with RX and TX labels.
 
-<strike>** This is how far i got until now. I'll try to extend this artcle or write a followup in the future. **</strike>
+~~** This is how far i got until now. I'll try to extend this artcle or write a followup in the future. **~~
 
 **Update: 2018-12-18**
+
 # Decoding the Messages
 
 Someone from Italy contacted me after reading this article and 
@@ -118,8 +119,8 @@ protocoll in one of their numerous patents, and indeed they were ver
 helpful!
 
 
-- <a href="https://patents.google.com/patent/WO2005076529A1/en">https://patents.google.com/patent/WO2005076529A1/en</a>
-- <a href="https://patents.google.com/patent/US20130159573/en">https://patents.google.com/patent/US20130159573/en</a>
+- https://patents.google.com/patent/WO2005076529A1/en
+- https://patents.google.com/patent/US20130159573/en
 
 
 
@@ -152,7 +153,7 @@ I tried some CRC brute force attempts but without success. After having
 discussed that issue with my Italian friend he was able to figure out 
 the polynom `0x07` as well as the initial value `0xF3` for the CRC algorithm.
 
-I used the CRC calculator from <a href="http://www.sunshine2k.de/coding/javascript/crc/crc_js.html">sunhine2k.de</a>
+I used the CRC calculator from [sunshine2k.de](http://www.sunshine2k.de/coding/javascript/crc/crc_js.html)>
  to verify the poly and init values. 
 Fortunately the page gives you a nice lookup table for the CRC values 
 which I then used in my Python program to verify all the messages I've 
@@ -248,8 +249,9 @@ Furthermore I've only see this reply all the time.
 `0x80 0x63 0x29 0x00 0x10 0x5E`
 
 
-- `0x29` (decimal `41`) command for slave status
-- `0x00` (binary `0000000` ) First status byte
+`0x29` (decimal `41`) command for slave status
+
+`0x00` (binary `0000000` ) First status byte
 
 - Bit 0: Impulse open = False
 - Bit 1: Impulse close = False
@@ -261,8 +263,7 @@ Furthermore I've only see this reply all the time.
 - Bit 7: Impulse half open = False
 
 
-
-- `0x10` (binary `00010000` ) Second status byte
+`0x10` (binary `00010000` ) Second status byte
 
 - Bit 0: End position / moving direction open = False
 - Bit 1: End position / moving direction close = False

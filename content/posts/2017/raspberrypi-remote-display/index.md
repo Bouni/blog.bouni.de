@@ -10,7 +10,7 @@ Two displays will be mounted in the hall where the fire trucks are as well as in
 
 My idea was to use a [VNC server](http://www.uvnc.com/downloads/ultravnc.html) on the Windows machine in the server room an a RaspberryPi as VNC client mounted to the backside of each TV.
 
-Because I had some touble getting the system up and running, I decided to document the project here <s>(I maybe extend this article from time to time as the szstem evolves)</s>.
+Because I had some touble getting the system up and running, I decided to document the project here ~~(I maybe extend this article from time to time as the system evolves)~~.
 
 **Edit 2017-01-31:** Edited the article to make it a detailed HowTo 
 
