@@ -17,3 +17,24 @@ publishDir = "/opt/docker/webserver/www/blog.bouni.de/"
   avatarLink = "/"
   remark42SiteID = "blog"
   remark42Url = "https://comments.bouni.de"
+  highlightWrap = false
+
+
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    hl_inline = false
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = true
+    noHl = false
+    style = 'onedark'
+    tabWidth = 4
+
+
