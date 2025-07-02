@@ -7,7 +7,6 @@ publishDir = "/opt/docker/webserver/www/blog.bouni.de/"
 
 [social]
   github = "https://github.com/bouni/"
-  twitter = "https://twitter.com/bouni2016"
 
 
 [params]

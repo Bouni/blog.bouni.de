@@ -1,8 +1,7 @@
 ---
-title: "TV + RaspberryPi Wallboard"
+title: "RaspberryPi Wallboard"
 date: 2025-07-02
 tags: [ TV, HDMI, RaspberryPi, Wallboard ]
-daft: false
 ---
 
 Back in 2017 I built two displays for my fire brigade that show alarm data in case of an alarm.
