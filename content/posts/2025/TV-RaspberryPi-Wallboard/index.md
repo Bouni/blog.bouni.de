@@ -7,15 +7,15 @@ tags: [ TV, HDMI, RaspberryPi, Wallboard ]
 Back in 2017 I built two displays for my fire brigade that show alarm data in case of an alarm.
 These use a 40" Samsung TV + a RaspberryPi 3B.
 
-A friend alreada had a [working solution](https://github.com/samuelb/minimal-wallboard), so I adapted his work.
+A friend already had a [working solution](https://github.com/samuelb/minimal-wallboard), so I adapted his work.
 It is a minimal approach that uses a matchbox-window-manager + midori
 
-The dispalys worked fine for all the years but recently I wanted to upgrade the installed RaspberryPi OS from Stretch to Bookworm.
+The displays worked fine for all the years but recently I wanted to upgrade the installed RaspberryPi OS from Stretch to Bookworm.
 
 That failed horribly 😏
 
 On one system the upgrade worked but the browser no longer started the other didn't boot after the update.
-So I decided to start from scratch and install the latest RaspberryPi OS lite 64-bit on one Pi and simply andd the .xinitrc + the xinit-login.service and call it a day.
+So I decided to start from scratch and install the latest RaspberryPi OS lite 64-bit on one Pi and simply and the .xinitrc + the xinit-login.service and call it a day.
 That didn't work for whatever reason. The folks that maintain RaspberryPi OS changed a lot of things under the hood but I was not able to figure out what exactly prevented this from working.
 
 So I started from the ground up and created a complete [script](https://gist.github.com/Bouni/a7d8f6e78ecc5bc4d5c28ed72707d29a) that automates the entire process.
@@ -33,7 +33,7 @@ apt update && sudo apt upgrade -y
 apt install -y lightdm openbox chromium-browser unclutter xorg
 ```
 We use lightdm as our display manager, openbox as our minimalistic window manager, chromium as our browser, unclutter to hide the mouse pointer. Everything on top of Xorg.
-I concidered using wayland in the beginning but that has its problems with overscan according to several sources and I need that.
+I considered using wayland in the beginning but that has its problems with overscan according to several sources and I need that.
 
 ### Configure lightdm
 ```sh
@@ -128,9 +128,9 @@ systemctl enable vncserver-x11-serviced
 systemctl start vncserver-x11-serviced
 ```
 
-The website I call needs to beee configured with credentials that are then stored in the local storage of the browser.
-In order to do this I set up VNC and use UltraVNC Client for the connection. I tried TightVNC bt that does not support the offered encryption methods.
+The website I call needs to be configured with credentials that are then stored in the local storage of the browser.
+In order to do this I set up VNC and use UltraVNC Client for the connection. I tried TightVNC but that does not support the offered encryption methods.
 
 ### Summary
 
-After a reboot everything woked as expected. The start time is a bit longer than in the old version, but that doesn't matter in my use case.
+After a reboot everything worked as expected. The start time is a bit longer than in the old version, but that doesn't matter in my use case.
