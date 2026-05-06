@@ -21,6 +21,7 @@ A few years ago I already sold PCBs. Small 1-wire boards that can act as simple 
 
 Back then I wrote my own invoicing solution, but I couldn't find what I botched together back then. The only thing I remembered as extremely helpful was the purchase of [Deutsche Post Internetmarken](https://www.deutschepost.de/de/i/internetmarke-porto-drucken.html) (a digital postage stamp) directly out of the UI and the direct printing via a [Brother QL-710W](https://store.brother.ch/de-ch/devices/label-printer/ql/ql700).
 
+
 I asked [kittendevv](https://github.com/kittendevv) if he can integrate such a functionality directly into Invio. He said maybe in the future, but as I had BSH-Boards on their way, I had no time to waste and decided to build my own sidecar solution as a Invio extension.
 
 Out of this came [franking](https://github.com/Bouni/franking/)
@@ -34,6 +35,7 @@ To make things even more convenient, I integrated the [PayPal API](https://devel
 
 What franking now can do for me:
 
+- Fetch the current Portokasse balance (thats the account from which the Internet marke is paid)
 - Send invoices directly from the UI to the e-mail address in the user created in Invio
 - Mark invoices as paid in Invio via its API, either automatically via PayPal and FinTS API or in case a customer didn't write the invoice number in their transaction, manually.
 - Purchase a Internetmarke for a Grossbrief national or Grossbrief international using the address data from Invio, depending on the customers country code
