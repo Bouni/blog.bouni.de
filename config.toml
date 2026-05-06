@@ -1,5 +1,5 @@
 baseURL = "https://blog.bouni.de/"
-languageCode = "en-us"
+locale = "en-us"
 title = "Bouni's blog"
 theme = "salix"
 enableEmoji = true
