@@ -1,4 +1,4 @@
----
+g--
 title: "Site-to-Site Wireguard VPN between Fritzbox and Mikrotik"
 date: 2026-05-08
 tags: [ Site-to-Site, Wireguard, Mikrotik, VPN ]
@@ -39,7 +39,7 @@ Here we see that the Mikrotiks public key is `ZHbjLKhWCsFJwfaLwJFzYY+q4HC7HFlP7G
 
 We create a config file and call it `fritzbox.conf` for example that looks like this:
 
-```
+```ini
 [Interface]
 PrivateKey = <fritzbox_private_key>
 DNS = 192.168.88.1
@@ -60,7 +60,7 @@ Now we need to generate a pre-shared key with `wg genpsk`, that gives us `3LPRiA
 
 With these two keys we can fill in the config file:
 
-```
+```ini
 [Interface]
 PrivateKey = gMt66o631A3Z0nZYoCEHwSt2edA0mkbH6Q3lOfLVNFw=
 DNS = 192.168.88.1
@@ -84,7 +84,7 @@ A few side notes, `192.168.88.1` is the IP of the Mikrotik Router, so I added th
 
 Now we add the Fritzbox as a peer
 
-```
+```sh
 /interface wireguard peers add interface="fritzbox-wg" \
   public-key="iX7yZ1SR1r8i2+DiUzh4hMDOVEGNHtX9bSluuGnRp0E=" \
   preshared-key="3LPRiA4G7Cjiov5oHCry+avYLmEwUtFsyRUIEYOVkv0=" \
@@ -97,14 +97,14 @@ I assume that the Fritzbox IP range is `192.168.178.0/24`, `10.0.0.0/24` is the 
 
 Next we add a route to the Fritzbox LAN
 
-```
+```sh
 /ip route add dst-address=192.168.178.0/24 \
   gateway="fritzbox-wg" comment="FritzBox Site-B LAN"
 ```
 
 Now we add a few Firewall rules, first one for the traffic from the Mikrotik to the Fritzbox
 
-```
+```sh
 /ip firewall filter add chain=forward action=accept \
   src-address=192.168.88.0/24 dst-address=192.168.178.0/24 \
   comment="VPN Forward to FritzBox Site-B" \
@@ -113,7 +113,7 @@ Now we add a few Firewall rules, first one for the traffic from the Mikrotik to 
 
 And another one for the direction of the Fritzbox towards the Mikrotik
 
-```
+```sh
 /ip firewall filter add \
   chain=forward action=accept \
   src-address=192.168.178.0/24 dst-address=192.168.88.0/24 \
