@@ -1,4 +1,4 @@
-g--
+---
 title: "Site-to-Site Wireguard VPN between Fritzbox and Mikrotik"
 date: 2026-05-08
 tags: [ Site-to-Site, Wireguard, Mikrotik, VPN ]
@@ -76,9 +76,10 @@ PersistentKeepalive = 25
 A few side notes, `192.168.88.1` is the IP of the Mikrotik Router, so I added this as DNS to the config file. With this the local DNS entries from the Mikrotik side resolve on the Fritzbox side.
 `10.0.0.0/24` is the tunnel IP range, `192.168.88.0/24` is the IP range on the Mikrotik side. `site-a.mytld.de` is a DNS entry (or a dynDNS entry) pointing to the public IP of the Mikrotik router. `51820` is the Port we use, that must match what we used in Step 1 when we created the Wireguard interface.
 
-> [!IMPORTANT]  
-> The key to have routing between both sides is to not set an IP on the Interface (Address = 10.0.0.2 for example).
-> If the address is set the routing does not work.
+{{< gh-blockquote type="important" >}}
+The key to have routing between both sides is to not set an IP on the Interface (Address = 10.0.0.2 for example).
+If the address is set the routing does not work.
+{{< /gh-blockquote >}}
 
 ## Step 3 - Mikrotik configuration
 
@@ -127,17 +128,21 @@ First go to `Internet > Permit Access > VPN (WireGuard®)` and click on `Add Wir
 
 Select the options as shown in the following screenshots.
 
-![](Screenshot 2026-05-08 145305.png)
+![](fritzbox-1.png)
 
-![](Screenshot 2026-05-08 145312.png)
+![](fritzbox-2.png)
 
-![](Screenshot 2026-05-08 145326.png)
+![](fritzbox-3.png)
 
-![](Screenshot 2026-05-08 145335.png)
+![](fritzbox-4.png)
 
-![](Screenshot 2026-05-08 145427.png)
+Here you select the config file that we created earlier
 
-![](Screenshot 2026-05-08 145435.png)
+![](fritzbox-5.png)
+
+Allow NetBIOS over this connection is optional but I read that it is useful with Windows Clients
+
+![](fritzbox-6.png)
 
 After that you should see that the indicator for the new Wireguard connection on the Fritzbox turns green after a few seconds.
 
